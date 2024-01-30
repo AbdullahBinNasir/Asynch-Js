@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+    <button id="btns">play</button>
+    <button id="btn">Stop</button>
+
+    <script>
+        // Example 1 :
+        //         console.log("a")
+        // console.log("b")
+        // console.log("c")
+        // console.log("d")
+        // // console.log("Hello")
+        // setTimeout(function(){
+        //     console.log("Hello after 3 sec")
+        // }, 3000)
+        // console.log("e")
+        // console.log("f")
+        // console.log("g")
+        // console.log("h")
+
+        // Example 2 :
+
+
+
+        // let name = function(){
+        //     console.log("Abdullah")
+        // }
+
+        // setTimeout(name, 3000)
+
+        //     const change = function(){
+        //         document.querySelector('h1').innerText = "Changed"
+        //     }
+
+        //    let timeout = setTimeout(change, 2000)
+        // clearTimeout(change)
+
+
+        //     const stopp = function (){
+        //         clearTimeout(timeout)
+        //         alert("stoped")
+        //     }
+
+        //     var button = document.getElementById("btn")
+
+        // Time Interval
+        // let name = function () {
+        //     console.log("Abdullah", Date.now())
+        //     let inter = setInterval(name, 2000)
+        // }
+
+        // var button = document.getElementById("btn").addEventListener("click", name);
+
+        // var stop = function () {
+        //     clearInterval(inter);
+        // }
+
+        // const play = document.getElementById("btns").addEventListener("click", stop);
+
+            let started = function(){
+                console.log("start")
+               var interval = setInterval(started, 2000);
+            }
+
+            let button = document.getElementById("btns").addEventListener("click",started);
+
+            let stop = function(){
+                clearInterval(interval);
+            }
+
+            let buttons = document.getElementById("btn").addEventListener("click",stop);
+
+        // clearInterval(inter)
+
+
+    </script>
+</body>
+
+</html>
