@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Promise In JS</h1>
+
+    <script>
+
+        // Example 1
+
+        // const promise = new Promise(function (resolve, reject) {
+        //     setTimeout(function () {
+        //         console.log("Promise Completed")
+        //         resolve()
+        //     }
+        //         , 4000)
+        // })
+
+        // promise.then(function () {
+        //     console.log("Promise consumed")
+        // })
+
+        // Example 2
+
+        // new promise(function (res, rej) {
+        //     setTimeout(function () {
+        //         console.log("Promise task 2")
+        //         res()
+        //     })
+        // }, 5000).then(function () {
+        //     console.log("Promise completed successfully")
+        // })
+
+
+        // new promise(function (res,rej) {
+        //     setTimeout(function(){
+        //         console.log("sadsadsa")
+        //     },4000)
+        // }).then(function(){
+        //     console.log("Promise completed successfully")
+        // })
+
+        // Example 3
+
+        // const promisethree = new Promise(function (resolve, reject) {
+        //     setTimeout(function() {
+        //         resolve("Abdullah")
+        //     },5000)   
+        // })
+
+        // promisethree.then(function(str){
+        //     console.log(str)
+        // })
+
+        // Exmaple 4
+
+        // const promiseFour = new Promise(function(resolve,reject){
+        //     setTimeout(function(){
+        //         resolve({username : "Abdullah" , Student : "Yes" , Course : "Javascript" })
+        //     },5000)
+        // })
+
+        // promiseFour.then(function(data){
+        //     console.log(data)
+        // })
+
+        // Example 5
+
+    //     const pizza =  true;
+
+    //     const promiseFive = new Promise(function(res,rej){if(pizza == true){
+    //         // console.log("Thanks for the treat !")
+    //         res("Thanks for the treat")
+    //     }else{
+    //         // console.log("Acha Nahi Kia Tumnay")
+    //         rej("Acha Nahi Kia Tumnay")
+    //     } 
+    // }).then(function(treat){
+    //     console.log(treat)
+    // }).catch(function(treats){
+    //     console.log(treats)
+    // })
+
+
+        // Example 6
+
+        var number = Math.round(Math.random() * 10);
+
+        let promiseSix = new Promise(function(resolve, reject){
+            if(number >= 5) {
+                resolve("Number 5 Say Chota Hai")
+            }else{
+                reject("Number 5 say chota nahi hai")
+            }
+        }).then(function(numb){
+            console.log(numb)
+        }).catch(function(err){
+            console.log(err)})
+
+    </script>
+
+</body>
+
+</html>
